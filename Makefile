@@ -1,7 +1,7 @@
-.PHONY all clean
+.PHONY: all clean
 
 all:
-	go build
+		go build
 
 clean:
-	git clean -d -x -f
+		git clean -d -x -f
