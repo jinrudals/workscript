@@ -1,7 +1,14 @@
-.PHONY: all clean
+.PHONY: all build clean-all clean-output
 
-all:
+all: build
+
+build:
 		go build
 
-clean:
+clean: clean-all
+
+clean-all:
 		git clean -d -x -f
+
+clean-output:
+		rm workscript
